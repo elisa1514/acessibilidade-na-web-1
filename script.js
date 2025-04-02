@@ -8,7 +8,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
     })
 })
+//Código omitido
 
+<script src="script.js"></script>
+
+//Código omitido
 <body>
     <header class=" p-5">
         
