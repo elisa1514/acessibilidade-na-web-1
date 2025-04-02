@@ -13,7 +13,26 @@ document.addEventListener('DOMContentLoaded', function(){
 <script src="script.js"></script>
 
 //Código omitido
+document.addEventListener('DOMContentLoaded', function(){
+    const aumentaFonteBotao document.getElementById('aumentar-fonte');
+    const diminuiFonteBotao document.getElementById('diminuir-fonte');
+
+    let tamanhoAtualFonte = 1;
+    aumentaFonteBotao.addEventListener('click', function(){
+        tamanhoAtualFonte += 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`
+
+    })
+
+    diminuiFonteBotao.addEventListener('click', function(){
+        tamanhoAtualFonte -= 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`
+
+    })
+
+})
 <body>
+
     <header class=" p-5">
         
         <nav class="container d-flex justify-content-between align-items-center" >
